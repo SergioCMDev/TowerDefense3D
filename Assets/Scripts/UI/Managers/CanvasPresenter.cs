@@ -10,15 +10,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using Utils;
 
-[Serializable]
-public struct BuyButtonData
-{
-    public TurretType turretType;
-    public Button button;
-}
-
 namespace UI.Managers
 {
+    [Serializable]
+    public struct BuyButtonData
+    {
+        public TurretType turretType;
+        public Button button;
+    }
+
     public class CanvasPresenter : MonoBehaviour
     {
         [SerializeField] private List<BuyButtonData> buttons;
